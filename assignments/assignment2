@@ -1,0 +1,234 @@
+ 
+Q1.What are the two values of the Boolean data type? How do you write them?
+
+  Ans:-The boolian data type has only two values: True or False.
+	a = True
+	b = False
+	print(a)
+	print(b)
+  
+	True
+	False
+
+	The output <class 'bool'> indicates the variable is a boolean data type.
+
+	Note the keywords True and False must have an Upper Case first letter. Using a lowercase true returns an error.
+
+Q2. What are the three different types of Boolean operators?
+
+	Ans:-the three basic boolean operators are and, or, and not
+ 
+Q3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean
+    values for the operator and what it evaluate ).
+
+  Ans:- True and True is True.
+
+		True and False is False.
+
+		False and True is False.
+
+		False and False is False.
+
+		True or True is True.
+
+		True or False is True.
+
+		False or True is True.
+
+		False or False is False.
+
+		not True is False.
+
+		not False is True.
+		
+		True is 1 and False is 0
+		
+		Truth Table for AND
+		A B output
+		0 0 0
+		0 1 0
+		1 0 0
+		1 1 1
+		Truth Table for OR
+		A B output
+		0 0 0
+		0 1 1
+		1 0 1
+		1 1 1
+		Truth Table for NOT
+		A output
+		0 1
+		1 0
+		
+Q4. What are the values of the following expressions?
+
+ Ans:-
+	print((5>4) and (3==5))
+	print(not(5>4))
+	print((5>4) or (3==5))
+	print(not((5>4) or (3==5)))
+	print((True and False) and (True==False))
+	print((not(False)) or (not(True)))
+	
+	False
+	False
+	True
+	False
+	False
+	True
+	
+Q5. What are the six comparison operators?
+
+	Ans.   ==, !=, <, >, <=, and >=
+	
+
+Q6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+
+ Ans:-	
+	== is the equal to operator that compares two values and evaluates to a Boolean, while = is the assignment operator that stores a value  in a variable.
+	
+	### Equal to operator ###
+
+	if(1==2):
+		print("True")
+	else:
+		print("False")
+		
+	### Assignment operator ###
+	k=9### Here assignment operator(=) is used to assihn value of k which is 9 ###
+	print("k =",k)
+	
+	False
+	k = 9 
+	
+	
+Q7. Identify the three blocks in this code:
+
+ Ans:-   
+    spam = 0
+	if(spam==10):
+		print('eggs')
+	if(spam>5):
+		print('bacon')
+	else:
+		print('ham')
+		print('spam')
+		print('spam')	
+		
+		ham
+		spam
+		spam
+		
+Q8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+	Greetings! if anything else is stored in spam.
+	
+ Ans:-
+		spam = int(input("Input a number:"))
+	try:
+		if spam == 1:
+			print("Hello")
+		elif spam == 2:
+			print("Howdy")
+		else:
+			print("Grittings")
+	except:
+			print("nothing")
+			
+	
+	Input a number:1
+	Hello
+	
+Q9.If your programme is stuck in an endless loop, what keys you’ll press?
+
+ Ans:-If program is stuck in endless loop we will press ctrl+c.
+ 
+Q10.How can you tell the difference between break and continue?
+
+ Ans:-The break statement will move the execution outside and just after a loop. The continue statement will move the execution to the start  of the loop.
+ 
+	 ###Using break loop ###
+	for i in range(10):
+		print(i)
+		if (i == 6):
+			break 
+	print("breaking")   
+Output:			
+		0
+		1
+		2
+		3
+		4
+		5
+		6
+		breaking	
+	###Using continue loop ###
+	for j in range(10):
+		print(j)
+		if (j == 6):
+			continue
+Output:
+		0
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		
+Q11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+		​
+	They all do the same thing. The range(10) call ranges from 0 up to (but not including) 10, range(0, 10) tells the loop to start at 0, and range(0, 10, 1) tells the loop to increase the variable by 1 on each iteration.
+	
+
+Q12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent
+	 program that prints the numbers 1 to 10 using a while loop.
+	 
+   Ans:-
+		###Use of for loop 1 to 10 ###
+	print("Foor loop 1 to 10")
+	for i in range(1,11):
+		print(i)
+	###Use of while loop 1 to 10 ###
+	print("while loop 1 to 10")
+	a = 1
+	while a <= 10:
+		print(a)
+		a+=1
+		
+		Foor loop 1 to 10
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		while loop 1 to 10
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		
+Q13. If you had a function named bacon() inside a module named spam, how would you call it after
+	 importing spam?
+
+   Ans:-This function can be called with spam.bacon().
+​
+
+        
+ 
+ 
+ 
+ 
